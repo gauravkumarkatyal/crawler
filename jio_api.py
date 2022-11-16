@@ -32,5 +32,9 @@ for i in range(0,8):
         d={'name':name,'mrp':mrp,'brand':brand,'pro_code':pro_code,'img_url':img_url}
         all_product.append(d)
         print(d)
+
+
+
+        
 df=pd.DataFrame(all_product)
 df.to_excel('jio_mart.xlsx',index=False)
